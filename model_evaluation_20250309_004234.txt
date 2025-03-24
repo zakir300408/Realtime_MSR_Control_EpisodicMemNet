@@ -1,0 +1,381 @@
+================================================================================
+MODEL EVALUATION RESULTS
+Generated at: 2025-03-09 00:42:34.678003
+================================================================================
+
+================================================================================
+NEURAL NETWORK PERFORMANCE
+================================================================================
+
+--- next_phase_value_x ---
+Accuracy: 0.8684
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.89      0.88      1938
+           1       0.83      0.82      0.82       763
+           2       0.88      0.88      0.88      1683
+           3       0.87      0.86      0.87      1535
+
+    accuracy                           0.87      5919
+   macro avg       0.86      0.86      0.86      5919
+weighted avg       0.87      0.87      0.87      5919
+
+
+--- next_phase_value_y ---
+Accuracy: 0.8730
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.89      0.89      2216
+           1       0.87      0.87      0.87      1425
+           2       0.86      0.85      0.85      1059
+           3       0.86      0.88      0.87      1219
+
+    accuracy                           0.87      5919
+   macro avg       0.87      0.87      0.87      5919
+weighted avg       0.87      0.87      0.87      5919
+
+
+--- next_phase_value_z ---
+Accuracy: 0.8601
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.86      0.87      1838
+           1       0.84      0.86      0.85      1336
+           2       0.84      0.84      0.84      1237
+           3       0.86      0.87      0.87      1508
+
+    accuracy                           0.86      5919
+   macro avg       0.86      0.86      0.86      5919
+weighted avg       0.86      0.86      0.86      5919
+
+
+--- next_amplitude_value_x ---
+Accuracy: 0.8844
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.85      0.86       717
+           1       0.86      0.86      0.86      1016
+           2       0.86      0.86      0.86      1439
+           3       0.91      0.92      0.91      2747
+
+    accuracy                           0.88      5919
+   macro avg       0.87      0.87      0.87      5919
+weighted avg       0.88      0.88      0.88      5919
+
+
+--- next_amplitude_value_y ---
+Accuracy: 0.8828
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.85      0.85       906
+           1       0.88      0.87      0.88      1205
+           2       0.87      0.90      0.89      1537
+           3       0.90      0.89      0.89      2271
+
+    accuracy                           0.88      5919
+   macro avg       0.88      0.88      0.88      5919
+weighted avg       0.88      0.88      0.88      5919
+
+
+--- next_amplitude_value_z ---
+Accuracy: 0.8780
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.72      0.77       436
+           1       0.85      0.86      0.85      1100
+           2       0.87      0.87      0.87      1689
+           3       0.90      0.91      0.91      2694
+
+    accuracy                           0.88      5919
+   macro avg       0.86      0.84      0.85      5919
+weighted avg       0.88      0.88      0.88      5919
+
+
+================================================================================
+MODEL COMPARISON RESULTS
+================================================================================
+
+--- next_phase_value_x ---
+Model Accuracies:
+  Xgboost: 0.8758
+  Neural Network: 0.8684
+  Random Forest: 0.8684
+  Decision Tree: 0.8632
+  Knn: 0.8618
+  Logistic Regression: 0.7381
+  Majority Baseline: 0.3274
+
+--- next_phase_value_y ---
+Model Accuracies:
+  Neural Network: 0.8730
+  Xgboost: 0.8728
+  Random Forest: 0.8724
+  Decision Tree: 0.8724
+  Knn: 0.8652
+  Logistic Regression: 0.7168
+  Majority Baseline: 0.3744
+
+--- next_phase_value_z ---
+Model Accuracies:
+  Random Forest: 0.8628
+  Xgboost: 0.8620
+  Neural Network: 0.8601
+  Decision Tree: 0.8598
+  Knn: 0.8547
+  Logistic Regression: 0.7481
+  Majority Baseline: 0.3105
+
+--- next_amplitude_value_x ---
+Model Accuracies:
+  Random Forest: 0.8846
+  Xgboost: 0.8846
+  Neural Network: 0.8844
+  Decision Tree: 0.8829
+  Logistic Regression: 0.8632
+  Knn: 0.8481
+  Majority Baseline: 0.4641
+
+--- next_amplitude_value_y ---
+Model Accuracies:
+  Random Forest: 0.8829
+  Decision Tree: 0.8829
+  Xgboost: 0.8829
+  Neural Network: 0.8828
+  Logistic Regression: 0.8824
+  Knn: 0.8474
+  Majority Baseline: 0.3837
+
+--- next_amplitude_value_z ---
+Model Accuracies:
+  Random Forest: 0.8804
+  Xgboost: 0.8799
+  Decision Tree: 0.8790
+  Neural Network: 0.8780
+  Logistic Regression: 0.8696
+  Knn: 0.8403
+  Majority Baseline: 0.4551
+
+================================================================================
+STATISTICAL SIGNIFICANCE TESTS
+================================================================================
+
+--- next_phase_value_x ---
+  Random Forest:
+    p-value: 0.9349 (not significant)
+    Better model: No significant difference
+  Decision Tree:
+    p-value: 0.0210 (significant)
+    Better model: Neural Network
+  k-NN:
+    p-value: 0.0109 (significant)
+    Better model: Neural Network
+  XGBoost:
+    p-value: 0.0004 (significant)
+    Better model: XGBoost
+  Random Forest vs Decision Tree:
+    p-value: 0.0000 (significant)
+    Better model: Random Forest
+  Random Forest vs k-NN:
+    p-value: 0.0013 (significant)
+    Better model: Random Forest
+  Random Forest vs XGBoost:
+    p-value: 0.0000 (significant)
+    Better model: XGBoost
+  Decision Tree vs k-NN:
+    p-value: 0.5541 (not significant)
+    Better model: No significant difference
+  Decision Tree vs XGBoost:
+    p-value: 0.0000 (significant)
+    Better model: XGBoost
+  k-NN vs XGBoost:
+    p-value: 0.0000 (significant)
+    Better model: XGBoost
+
+--- next_phase_value_y ---
+  Random Forest:
+    p-value: 0.5488 (not significant)
+    Better model: No significant difference
+  Decision Tree:
+    p-value: 0.5078 (not significant)
+    Better model: No significant difference
+  k-NN:
+    p-value: 0.0000 (significant)
+    Better model: Neural Network
+  XGBoost:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  Random Forest vs Decision Tree:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  Random Forest vs k-NN:
+    p-value: 0.0000 (significant)
+    Better model: Random Forest
+  Random Forest vs XGBoost:
+    p-value: 0.6250 (not significant)
+    Better model: No significant difference
+  Decision Tree vs k-NN:
+    p-value: 0.0000 (significant)
+    Better model: Decision Tree
+  Decision Tree vs XGBoost:
+    p-value: 0.6250 (not significant)
+    Better model: No significant difference
+  k-NN vs XGBoost:
+    p-value: 0.0000 (significant)
+    Better model: XGBoost
+
+--- next_phase_value_z ---
+  Random Forest:
+    p-value: 0.0568 (not significant)
+    Better model: No significant difference
+  Decision Tree:
+    p-value: 0.9062 (not significant)
+    Better model: No significant difference
+  k-NN:
+    p-value: 0.0050 (significant)
+    Better model: Neural Network
+  XGBoost:
+    p-value: 0.2004 (not significant)
+    Better model: No significant difference
+  Random Forest vs Decision Tree:
+    p-value: 0.0013 (significant)
+    Better model: Random Forest
+  Random Forest vs k-NN:
+    p-value: 0.0000 (significant)
+    Better model: Random Forest
+  Random Forest vs XGBoost:
+    p-value: 0.1250 (not significant)
+    Better model: No significant difference
+  Decision Tree vs k-NN:
+    p-value: 0.0053 (significant)
+    Better model: Decision Tree
+  Decision Tree vs XGBoost:
+    p-value: 0.0146 (significant)
+    Better model: XGBoost
+  k-NN vs XGBoost:
+    p-value: 0.0000 (significant)
+    Better model: XGBoost
+
+--- next_amplitude_value_x ---
+  Random Forest:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  Decision Tree:
+    p-value: 0.2807 (not significant)
+    Better model: No significant difference
+  XGBoost:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  Logistic Regression vs Decision Tree:
+    p-value: 0.0000 (significant)
+    Better model: Decision Tree
+  Logistic Regression vs k-NN:
+    p-value: 0.0000 (significant)
+    Better model: Logistic Regression
+  Logistic Regression vs XGBoost:
+    p-value: 0.0000 (significant)
+    Better model: XGBoost
+  Random Forest vs Decision Tree:
+    p-value: 0.0063 (significant)
+    Better model: Random Forest
+  Random Forest vs XGBoost:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  Decision Tree vs XGBoost:
+    p-value: 0.0213 (significant)
+    Better model: XGBoost
+
+--- next_amplitude_value_y ---
+  Logistic Regression:
+    p-value: 0.7266 (not significant)
+    Better model: No significant difference
+  Random Forest:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  Decision Tree:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  XGBoost:
+    p-value: 1.0000 (not significant)
+    Better model: No significant difference
+  Logistic Regression vs Random Forest:
+    p-value: 0.3750 (not significant)
+    Better model: No significant difference
+  Logistic Regression vs Decision Tree:
+    p-value: 0.3750 (not significant)
+    Better model: No significant difference
+  Logistic Regression vs XGBoost:
+    p-value: 0.3750 (not significant)
+    Better model: No significant difference
+  Random Forest vs Decision Tree:
+    p-value: 1.0000 (not significant)
+    Better model: tied
+  Random Forest vs XGBoost:
+    p-value: 1.0000 (not significant)
+    Better model: tied
+  Decision Tree vs XGBoost:
+    p-value: 1.0000 (not significant)
+    Better model: tied
+
+--- next_amplitude_value_z ---
+  Logistic Regression vs Random Forest:
+    p-value: 0.0000 (significant)
+    Better model: Random Forest
+  Logistic Regression vs Decision Tree:
+    p-value: 0.0000 (significant)
+    Better model: Decision Tree
+  Logistic Regression vs k-NN:
+    p-value: 0.0000 (significant)
+    Better model: Logistic Regression
+  Logistic Regression vs XGBoost:
+    p-value: 0.0000 (significant)
+    Better model: XGBoost
+  Random Forest vs Decision Tree:
+    p-value: 0.2159 (not significant)
+    Better model: No significant difference
+  Random Forest vs XGBoost:
+    p-value: 0.6291 (not significant)
+    Better model: No significant difference
+  Decision Tree vs XGBoost:
+    p-value: 0.3323 (not significant)
+    Better model: No significant difference
+
+--- consistency_metrics ---
+
+================================================================================
+MODEL RANKINGS
+================================================================================
+
+Overall Average Performance:
+  1. Majority Baseline: 7.0000
+  2. Logistic Regression: 5.5000
+  3. k-NN: 5.5000
+  4. Decision Tree: 3.8333
+  5. XGBoost: 2.5000
+  6. Random Forest: 2.1667
+  7. Neural Network: 1.5000
+
+Friedman Test Results:
+  p-value: 0.0000 (significant)
+  There are significant differences among the models
+
+================================================================================
+ENVIRONMENT AND MODEL INFORMATION
+================================================================================
+
+Neural Network Information:
+  type: MultiHeadClassifier
+  hidden_size: 64
+  num_outputs: 6
+
+Task Information:
+  num_samples: 29595
+  train_size: 23676
+  test_size: 5919
+  input_features: 10
+  output_columns: ['next_phase_value_x', 'next_phase_value_y', 'next_phase_value_z', 'next_amplitude_value_x', 'next_amplitude_value_y', 'next_amplitude_value_z']
