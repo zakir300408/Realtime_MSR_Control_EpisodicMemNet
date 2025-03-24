@@ -109,6 +109,4 @@ Evaluation metrics include accuracy, confusion matrices, and statistical signifi
 - Matplotlib
 - H5py
 
-## License
 
-This project is part of academic research for IEEE TSME.
